@@ -39,7 +39,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 RUN apt-get autoclean
 RUN apt-get autoremove
-RUN apt install chromium-browser
 RUN dpkg-reconfigure locales
 
 # ------------------------------------------------------------
