@@ -35,12 +35,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     zip unzip expect supervisor curl git wget g++ ssh terminator htop gnupg2 locales \
     xfce4 ibus ibus-clutter ibus-gtk ibus-gtk3 \
     gnome-shell ubuntu-gnome-desktop gnome-session gdm3 tasksel \
-    gnome-session gdm3 tasksel \
-    chromium-browser 
+    gnome-session gdm3 tasksel    
 
 RUN apt-get autoclean
 RUN apt-get autoremove
-
+RUN apt install chromium-browser
 RUN dpkg-reconfigure locales
 
 # ------------------------------------------------------------
